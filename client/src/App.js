@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import axios from 'axios';
+import HeaderBlog from './components/HeaderBlog'
 
 class App extends Component {
   constructor(props){
@@ -23,12 +24,13 @@ class App extends Component {
   render() {  
   return (
     <div className="App">
+      <HeaderBlog />
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <h1 className="App-title">Bem vindo ao React</h1>  
+        <h1 className="App-title">Welcome to React</h1>  
       </header>
       <p className="App-intro">
-        Para começar, edite <code>src/App.js</code> e salve para recarregar.
+        To get started, edit <code>src/App.js</code> and save to reload.
       </p>
       
     </div>
